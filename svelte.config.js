@@ -12,8 +12,11 @@ const config = {
     paths: {
       base: dev ? "" : "",
     },
-    // hydrate the <div id="svelte"> element in src/app.html
-    target: "#svelte",
+    prerender: {
+      enabled: true,
+      default: true,
+    },
+    trailingSlash: "never",
   },
 };
 
