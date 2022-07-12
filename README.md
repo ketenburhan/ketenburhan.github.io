@@ -1,5 +1,5 @@
-# SvelteKit Github Pages Template
+# Personal Website
 
-A template for easily deploying a SvelteKit site on Github Pages. See the guide here for more info: [How to Deploy SvelteKit Apps on Github Pages](https://sveltesaas.com/articles/sveltekit-github-pages-guide)
+My personal website built with svelte and svelte-kit.
 
-Once you've cloned this repository, go to the Github repository Settings page and turn on Github Pages for the `/docs` folder in the `main` branch.
+[ketenburhan.github.io](https://ketenburhan.github.io/)
