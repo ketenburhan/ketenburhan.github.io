@@ -1,4 +1,5 @@
 import adapter from "@sveltejs/adapter-static"; // was adapter-auto
+import sveltePreprocess from "svelte-preprocess";
 
 const dev = process.env.NODE_ENV === "development";
 
@@ -9,6 +10,13 @@ const config = {
       pages: "docs",
       assets: "docs",
     }),
+    files: {
+      lib: "src/lib",
+    },
+    alias: {
+      $components: "src/components",
+      $utils: "src/utils",
+    },
     paths: {
       base: dev ? "" : "",
     },
@@ -18,6 +26,7 @@ const config = {
     },
     trailingSlash: "never",
   },
+  preprocess: sveltePreprocess(),
 };
 
 export default config;
