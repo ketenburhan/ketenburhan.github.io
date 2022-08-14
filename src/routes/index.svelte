@@ -154,6 +154,9 @@
     font-weight: 500;
     margin-top: 120px;
     line-height: 185%;
+
+    /* for now */
+    opacity: 0;
   }
 
   :global(.tablet_screen) .about-me {
