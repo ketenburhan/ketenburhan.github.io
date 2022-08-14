@@ -6,7 +6,7 @@
   <div class="arrow-button">
     <div class="inner">
       <slot />
-      <div class="arrow" />
+      <!-- <div class="arrow" /> -->
     </div>
   </div>
 </a>

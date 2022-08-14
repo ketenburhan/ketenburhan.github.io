@@ -24,6 +24,10 @@
     margin-bottom: 3px;
   }
 
+  .bar:last-child {
+    margin: 0;
+  }
+
   .bar-1 {
     background-color: var(--base-color1);
   }

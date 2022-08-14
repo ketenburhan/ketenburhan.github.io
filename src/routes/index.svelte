@@ -81,8 +81,16 @@
     font-family: "Montserrat", sans-serif;
   }
 
+  :global(.mobile_screen) h1 {
+    font-size: 16vw;
+  }
+
   .heading-container {
-    margin-top: 400px;
+    margin-top: 300px;
+  }
+
+  :global(.mobile_screen) .heading-container {
+    margin-top: 240px;
   }
 
   .name,
@@ -97,56 +105,86 @@
     font-size: 128px;
     font-weight: bold;
   }
+
+  :global(.tablet_screen) .name {
+    font-size: 84px;
+    font-size: 12vw;
+  }
+
   .info {
     margin-top: 32px;
     font-size: 32px;
   }
 
+  :global(.tablet_screen) .info {
+    font-size: 4vw;
+  }
+
   .about-container {
     margin: auto;
-    margin-top: 700px;
+    margin-top: 500px;
     width: 64%;
-    display: grid;
+  }
 
-    /* for now */
-    /* grid-template-columns: repeat(2, 1fr); */
+  :global(.tablet_screen) .about-container {
+    width: 80%;
+  }
+  :global(.mobile_screen) .about-container {
+    margin-top: 300px;
   }
 
   .picture {
     width: 360px;
-    height: 360px;
+    max-width: 80%;
+    aspect-ratio: 1;
     border-radius: 20px;
     background-image: url("/ktn.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 10px solid var(--picture-border);
-
-    /* for now */
     margin: auto;
   }
 
   .about-me {
-    /* for now */
-    display: none;
-
-    width: 560px;
+    width: 100%;
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
     color: var(--light-grey);
+    text-align: center;
+    font-weight: 500;
+    margin-top: 120px;
+    line-height: 185%;
+  }
+
+  :global(.tablet_screen) .about-me {
+    font-size: 16px;
+    font-weight: 600;
   }
 
   .projects-container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     margin-top: 760px;
   }
 
+  :global(.tablet_screen) .projects-container {
+    width: 90%;
+  }
+
+  :global(.mobile_screen) .projects-container {
+    margin-top: 300px;
+  }
+
   .header {
     width: 400px;
+    max-width: 100%;
     margin: auto;
     margin-bottom: 260px;
     padding-top: 40px;
     text-align: center;
+  }
+  :global(.mobile_screen) .header {
+    margin-bottom: 140px;
   }
 
   .float-right {
@@ -154,6 +192,7 @@
     align-items: end;
     flex-direction: column;
   }
+
   .blue-button {
     display: block;
     padding: 32px;
@@ -165,9 +204,20 @@
     font-size: 1.5rem;
     text-decoration: none;
   }
+  :global(.mobile_screen) .blue-button {
+    margin: auto;
+    padding: 16px 48px;
+    font-size: 6vw;
+  }
 
   .contact-container {
+    width: 90%;
+    margin: auto;
     margin-top: 960px;
+  }
+
+  :global(.mobile_screen) .contact-container {
+    margin-top: 300px;
   }
 
   .mail {
@@ -175,8 +225,11 @@
     text-decoration: none;
     color: var(--other-orange);
     text-align: center;
-    font-size: 3rem;
+    font-size: 3em;
     margin: 130px auto;
     font-family: "Montserrat", sans-serif;
+  }
+  :global(.tablet_screen) .mail {
+    font-size: 5.2vw;
   }
 </style>
